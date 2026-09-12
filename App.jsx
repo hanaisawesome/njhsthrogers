@@ -485,6 +485,7 @@ function OwnerTab() {
   const [draft, setDraft] = useState(null);
   const [pw, setPw] = useState(null);
   const [savedMsg, setSavedMsg] = useState("");
+  const [pwMsg, setPwMsg] = useState("");
 
   useEffect(() => {
     if (unlocked && !content.loading && draft === null) {
@@ -553,7 +554,6 @@ function OwnerTab() {
     setTimeout(() => setSavedMsg(""), 3000);
   };
 
-  const [pwMsg, setPwMsg] = useState("");
   const savePasscodes = async () => {
     if (!pw.admin.trim() || !pw.owner.trim()) {
       setPwMsg("Both passcodes need a value before saving.");
