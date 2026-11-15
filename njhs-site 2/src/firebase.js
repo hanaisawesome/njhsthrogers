@@ -1,18 +1,13 @@
-// ─────────────────────────────────────────────────────────────
-// PASTE YOUR FIREBASE CONFIG HERE
-// Get it from: Firebase Console → Project settings → Your apps
-// → SDK setup and configuration → Config
-// ─────────────────────────────────────────────────────────────
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "PASTE_YOURS_HERE",
-  authDomain: "PASTE_YOURS_HERE",
-  projectId: "PASTE_YOURS_HERE",
-  storageBucket: "PASTE_YOURS_HERE",
-  messagingSenderId: "PASTE_YOURS_HERE",
-  appId: "PASTE_YOURS_HERE",
+  apiKey: "AIzaSyCkH5zYy_0C-n2M5cQoljuMYnUz_srVxH8",
+  authDomain: "njhsthrogers.firebaseapp.com",
+  projectId: "njhsthrogers",
+  storageBucket: "njhsthrogers.firebasestorage.app",
+  messagingSenderId: "244806160496",
+  appId: "1:244806160496:web:1ad4f044eff3d84162a4b5",
 };
 
 const app = initializeApp(firebaseConfig);
